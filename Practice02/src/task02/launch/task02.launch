@@ -1,0 +1,20 @@
+from launch import LaunchDescription
+from launch_ros.actions import Node
+from launch.actions import DeclareLaunchArgument
+from launch.substitutions import LaunchConfiguration
+
+def generate_launch_description():
+    return LaunchDescription([
+        DeclareLaunchArgument('text', default_value='Hello, ROS2!'),
+
+        Node(
+            package='task02',
+            executable='publisher',
+            name='publisher',
+            output='screen',
+            parameters=[
+                {'text': LaunchConfiguration('text')},   # Pass the text parameter from the command line
+                'config/task02.yaml'                    # Load the config file with topic_name
+            ]
+        ),
+    ])
