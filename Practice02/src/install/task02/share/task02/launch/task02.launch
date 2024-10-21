@@ -1,6 +1,8 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
 from launch.actions import DeclareLaunchArgument
+import os
+from ament_index_python.packages import get_package_share_directory
 from launch.substitutions import LaunchConfiguration
 
 def generate_launch_description():
@@ -14,7 +16,10 @@ def generate_launch_description():
             output='screen',
             parameters=[
                 {'text': LaunchConfiguration('text')},   # Pass the text parameter from the command line
-                'config/task02.yaml'                    # Load the config file with topic_name
+                os.path.join(get_package_share_directory('task02'),
+                'config',
+                'task02.yaml'
+                )
             ]
         ),
     ])
