@@ -1,0 +1,19 @@
+[0.435s] Invoking command in '/workspace/ros2-iamblobfish/Practice02/src/task02': PYTHONPATH=/workspace/ros2-iamblobfish/Practice02/src/build/task02/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/ros2-iamblobfish/Practice02/src/install/task02/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/task02 build --build-base /workspace/ros2-iamblobfish/Practice02/src/build/task02/build install --record /workspace/ros2-iamblobfish/Practice02/src/build/task02/install.log --single-version-externally-managed install_data
+[0.604s] running egg_info
+[0.604s] writing ../build/task02/task02.egg-info/PKG-INFO
+[0.605s] writing dependency_links to ../build/task02/task02.egg-info/dependency_links.txt
+[0.605s] writing entry points to ../build/task02/task02.egg-info/entry_points.txt
+[0.605s] writing requirements to ../build/task02/task02.egg-info/requires.txt
+[0.605s] writing top-level names to ../build/task02/task02.egg-info/top_level.txt
+[0.606s] reading manifest file '../build/task02/task02.egg-info/SOURCES.txt'
+[0.607s] writing manifest file '../build/task02/task02.egg-info/SOURCES.txt'
+[0.607s] running build
+[0.607s] running build_py
+[0.607s] copying task02/publisher.py -> /workspace/ros2-iamblobfish/Practice02/src/build/task02/build/lib/task02
+[0.607s] running install
+[0.608s] running install_lib
+[0.608s] copying /workspace/ros2-iamblobfish/Practice02/src/build/task02/build/lib/task02/publisher.py -> /workspace/ros2-iamblobfish/Practice02/src/install/task02/lib/python3.10/site-packages/task02
+[0.609s] byte-compiling /workspace/ros2-iamblobfish/Practice02/src/install/task02/lib/python3.10/site-packages/task02/publisher.py to publisher.cpython-310.pyc
+[0.610s] running install_data
+[0.610s] error: can't copy 'launch/task02.launch.py.py': doesn't exist or not a regular file
+[0.625s] Invoked command in '/workspace/ros2-iamblobfish/Practice02/src/task02' returned '1': PYTHONPATH=/workspace/ros2-iamblobfish/Practice02/src/build/task02/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/ros2-iamblobfish/Practice02/src/install/task02/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/task02 build --build-base /workspace/ros2-iamblobfish/Practice02/src/build/task02/build install --record /workspace/ros2-iamblobfish/Practice02/src/build/task02/install.log --single-version-externally-managed install_data
