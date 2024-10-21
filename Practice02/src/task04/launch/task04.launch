@@ -1,0 +1,17 @@
+from launch import LaunchDescription
+from launch_ros.actions import Node
+from launch.actions import DeclareLaunchArgument
+from launch.substitutions import LaunchConfiguration
+
+def generate_launch_description():
+    return LaunchDescription([
+        DeclareLaunchArgument('image_topic', default_value='/camera/image/compressed'),
+
+        Node(
+            package='task04',
+            executable='image_saver',
+            name='image_saver',
+            output='screen',
+            parameters=[{'image_topic': LaunchConfiguration('image_topic')}]
+        )
+    ])
